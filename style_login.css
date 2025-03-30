@@ -197,8 +197,8 @@ nav a:hover {
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Apilar el menú en móviles */
-        gap: 5px;
-        padding: 5px 0;
+        gap: 10px;
+        padding: 10px 0;
     }
     
     nav li {
@@ -221,6 +221,42 @@ nav a:hover {
 
     .message h2 {
         font-size: 1.4rem; /* Reducir el tamaño de texto */
+    }
+}
+/* ----- MENÚ HAMBURGUESA ----- */
+.menu-toggle {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostrar cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar el botón en móviles */
     }
 }
 
