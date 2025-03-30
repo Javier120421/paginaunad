@@ -190,3 +190,37 @@ nav a:hover {
     opacity: 0;
     visibility: hidden;
 }
+
+
+
+/* ----- MENÚ RESPONSIVO ----- */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Apilar el menú en móviles */
+        gap: 5px;
+        padding: 5px 0;
+    }
+    
+    nav li {
+        padding: 5px 0;
+    }
+}
+
+/* ----- FORMULARIOS RESPONSIVOS ----- */
+@media screen and (max-width: 768px) {
+    .container-form {
+        flex-direction: column; /* Apilar formularios */
+        height: auto;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 90%; /* Que ocupe más espacio en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    .message h2 {
+        font-size: 1.4rem; /* Reducir el tamaño de texto */
+    }
+}
+
