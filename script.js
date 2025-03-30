@@ -9,3 +9,6 @@ document.addEventListener('click', e => {
         $signUp.classList.toggle('active')
     }
 });
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+    document.querySelector("nav ul").classList.toggle("show");
+});
